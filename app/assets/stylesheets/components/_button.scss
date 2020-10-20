@@ -1,0 +1,30 @@
+ .btn_home_new  {
+   background-color: #EFEFEF;
+   color: black;
+   margin-bottom: 5px;
+   padding: 6px 8px;
+   margin-right: 16px;
+   margin-left: 16px;
+   font-size: 16px;
+   border: none;
+   border-radius: 50px;
+   box-shadow: 1px 1px 15px rgba(0,0,0,0.2);
+ }
+  .btn_home {
+
+    background-color: #EFEFEF;
+   color: black;
+   margin-bottom: 5px;
+   padding: 6px 8px;
+   margin-right: 16px;
+   margin-left: 16px;
+   font-size: 16px;
+   border: none;
+   border-radius: 50px;
+   box-shadow: 1px 1px 15px rgba(0,0,0,0.2);
+  }
+  .btn {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+

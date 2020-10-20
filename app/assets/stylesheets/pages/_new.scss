@@ -1,0 +1,31 @@
+
+.new_form {
+  // background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.8)), url(https://res.cloudinary.com/claidy/image/upload/v1602792299/annie-spratt-pdyQ3Ox-UEU-unsplash_hbden4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+ .bttm_pic {
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
+
+   }
+
+ .bttm_pics {
+  background-position: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 50%;
+ }
+
+.title_new {
+  text-align: center;
+
+}
+.box {
+  margin-top: 50px;
+}
+

@@ -1,0 +1,62 @@
+.img_header {
+  width: 100vw;
+  height: 480px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2));
+  object-fit: cover;
+  overflow: hidden;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.name {
+  text-align: center;
+}
+
+.cocktail_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.ingr_cocktail {
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 5px;
+  height: 250px;
+  width: 250px;
+}
+.new_dose {
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 5px;
+  height: 250px;
+  width: 250px;
+}
+.delete_btn {
+  color: #303C74;
+  text-decoration: underline;
+}
+h1 {
+  text-align: center;
+}
+.form_add{
+  .btn {
+    background-color: #EFEFEF;
+   color: black;
+   margin-bottom: 5px;
+   padding: 6px 8px;
+   margin-right: 16px;
+   margin-left: 16px;
+   font-size: 16px;
+   border: none;
+   border-radius: 50px;
+   box-shadow: 1px 1px 15px rgba(0,0,0,0.2);
+  }
+}
+

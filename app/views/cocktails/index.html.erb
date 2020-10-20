@@ -1,18 +1,29 @@
-<div class="main_title">
-  <h1>Mr.Cocktail</h1>
-  <p>Welcome to the Mr.Cocktail -the  best bar in the neighbourhood</p>
+<div class="main_title" style='background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.8)), url(https://res.cloudinary.com/claidy/image/upload/v1602792299/annie-spratt-pdyQ3Ox-UEU-unsplash_hbden4.jpg);'>
+  <div class="header1">
+    <h1 class = "home_title">Mr.Cocktail</h1>
+    <p class = "home_page">Welcome to the Mr.Cocktail -the  best bar in the neighbourhood</p>
+  </div>
+
+ <div class ="btn">
+  <%= link_to "Create new cocktail", new_cocktail_path, class: "btn btn_home" %>
 </div>
-<%= link_to "Create new cocktail", new_cocktail_path, class: "btn btn-primary btn-lg" %>
 <div class="container">
-  <div class="row">
+   <div class="row">
     <% @cocktails.each do |cocktail| %>
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
+        <% if cocktail.photos.attached? %>
+        <div class = "photo_c" style="background-image: url('<%= cl_image_path cocktail.photos[0].key %>')">
+          </div>
+        <% else %>
+          <p>No photo attached.</p>
+        <% end %>
+        <div class=" card-body cocktail_infos">
           <h5 class="card-title"><%= cocktail.name %></h5>
-          <%= link_to "Ingredients",  cocktail_path(cocktail)  %>
-        </div>
+          <%= link_to "Ingredients",  cocktail_path(cocktail) %>
+       </div>
       </div>
     <% end %>
     </div>
  </div>
+</div>
+

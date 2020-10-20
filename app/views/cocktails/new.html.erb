@@ -1,10 +1,20 @@
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <h1>Create a new cocktail</h1>
-      <%= simple_form_for @cocktail do |f| %>
-        <%= f.input :name %>
-        <%= f.button :submit, class: 'btn btn-primary' %>
-      <% end %>
+<div class="main_title" style='background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.8)), url(https://res.cloudinary.com/claidy/image/upload/v1602792299/annie-spratt-pdyQ3Ox-UEU-unsplash_hbden4.jpg);'>
+    <div class="row justify-content-center new_form">
+       <div class="col-md-8 box">
+        <h1 class="title_new">Create a new cocktail</h1>
+        <%= simple_form_for @cocktail do |f| %>
+          <%= f.input :name %>
+          <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+          <div class= "btn">
+            <%= f.button :submit, class: 'btn  btn_home_new' %>
+          </div>
+          <div class="bttm_pic">
+            <img src="https://res.cloudinary.com/claidy/image/upload/v1602168348/nonfeature-whiskey-cocktail-recipe_y6wy3z.jpg" alt="" class = "bttm_pics">
+            <img src="https://res.cloudinary.com/claidy/image/upload/v1602168353/john-fornander-4VYLNi0qeF8-unsplash_oo5buc.jpg" alt="" class = "bttm_pics">
+          </div>
+        <% end %>
+       </div>
     </div>
-  </div>
 </div>
+
+
